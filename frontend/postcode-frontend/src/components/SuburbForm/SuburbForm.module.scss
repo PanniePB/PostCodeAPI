@@ -1,0 +1,29 @@
+@use "../../partials/palette";
+@use "../../partials/mixins";
+@use "../../partials/breakpoints";
+
+.card {
+  box-shadow: 2px 3px 11px 0px rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  & div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    & p {
+      color: palette.$red;
+    }
+  }
+}

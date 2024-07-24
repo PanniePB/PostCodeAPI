@@ -1,0 +1,17 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+
+  &__radio {
+    display: flex;
+    flex-direction: row-reverse;
+    align-self: baseline;
+    gap: 9px;
+  }
+
+  & input {
+    border-radius: 5px;
+    padding: 5px;
+  }
+}

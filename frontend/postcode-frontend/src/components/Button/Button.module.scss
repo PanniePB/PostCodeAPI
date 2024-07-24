@@ -1,0 +1,19 @@
+@use "../../partials/palette.scss";
+
+.button {
+  padding: 3px 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: 1px solid grey;
+  cursor: pointer;
+  background-color: palette.$color1;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: palette.$color1-dark;
+    transform: scale(0.99);
+  }
+}

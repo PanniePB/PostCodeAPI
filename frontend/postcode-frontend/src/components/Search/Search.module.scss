@@ -1,0 +1,27 @@
+@use "../../partials/palette";
+@use "../../partials/mixins";
+@use "../../partials/breakpoints";
+
+.form {
+  display: flex;
+  gap: 3px;
+  width: 100%;
+
+  & input {
+    width: fit-content;
+    min-width: 300px;
+
+    border-radius: 5px;
+    padding: 2px;
+    border: 1px solid grey;
+
+    @include mixins.phone_sm {
+      width: 100%;
+      min-width: 200px;
+    }
+  }
+
+  &__button {
+    padding: 2px 5px;
+  }
+}
